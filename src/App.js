@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default class App extends React.Component {
 
-export default App;
+    render() {
+        return (
+            <div className="App">
+
+                <h1>Title</h1>
+
+                <p>
+                    Paragraph with <b>html</b> inside
+                </p>
+
+                <p>
+                    Paragraph with <a href="//google.com" target="_blank">link</a>
+                </p>
+
+                <input type="text" placeholder="input"/>
+            </div>
+        );
+    }
+
+}
